@@ -1,17 +1,3 @@
-# Example GitHub workflow. Copy it to .github/workflows/top10-deprecations.yml
-# in the repository of the PHP application.
-#
-# Triggered by dispatch_top10_deprecations.php, which sends the most frequent
-# deprecations from the error-handler-sqlite database:
-#
-#   GITHUB_TOKEN=... php dispatch_top10_deprecations.php /var/log/php-errors.sqlite owner/repo \
-#       --strip-prefix=/var/www/app/current/
-#
-# Required repository secret: ANTHROPIC_API_KEY
-#
-# Pull requests created with the default GITHUB_TOKEN do not trigger other
-# workflows (CI). Use a GitHub App token in "github_token" if CI must run.
-
 name: Fix top 10 deprecations
 
 on:
